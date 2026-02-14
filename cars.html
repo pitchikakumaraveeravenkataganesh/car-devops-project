@@ -8,7 +8,7 @@
 {% for car in cars %}
 <div class="col-md-4">
 <div class="card shadow mb-4">
-<img src="/static/images/{{car.image}}" class="card-img-top">
+<img src="{{ url_for('static', filename='images/cars1.jpg') }}" class="card-img-top">
 <div class="card-body text-center">
 <h5>{{car.name}}</h5>
 <p>{{car.price}}</p>
@@ -20,3 +20,4 @@
 </div>
 
 {% endblock %}
+
