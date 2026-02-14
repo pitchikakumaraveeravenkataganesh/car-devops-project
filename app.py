@@ -3,9 +3,9 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 cars_data = [
-    {"name": "BMW M4", "price": "₹1.2 Cr", "image": "car1.jpg"},
-    {"name": "Audi R8", "price": "₹2.3 Cr", "image": "car2.jpg"},
-    {"name": "Mercedes AMG", "price": "₹1.8 Cr", "image": "car3.jpg"}
+    {"name": "BMW M4", "price": "₹1.2 Cr", "image": "cars1.jpg"},
+    {"name": "Audi R8", "price": "₹2.3 Cr", "image": "cars2.jpg"},
+    {"name": "Mercedes AMG", "price": "₹1.8 Cr", "image": "cars3.jpg"}
 ]
 
 @app.route("/")
@@ -22,3 +22,4 @@ def contact():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
