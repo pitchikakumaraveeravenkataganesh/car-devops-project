@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2 class="text-center">Our Cars</h2>
+
+<div class="row">
+
+{% for car in cars %}
+<div class="col-md-4">
+<div class="card shadow mb-4">
+<img src="/static/images/{{car.image}}" class="card-img-top">
+<div class="card-body text-center">
+<h5>{{car.name}}</h5>
+<p>{{car.price}}</p>
+</div>
+</div>
+</div>
+{% endfor %}
+
+</div>
+
+{% endblock %}
