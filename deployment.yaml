@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: carworld-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: carworld
+  template:
+    metadata:
+      labels:
+        app: carworld
+    spec:
+      containers:
+      - name: car-container
+        image: yourdockerhubusername/carworld:latest
+        ports:
+        - containerPort: 5000
